@@ -6,26 +6,7 @@ html {
     -ms-text-size-adjust: 100%;
     font-size-adjust: 100%
 }
-.entry-media {
-    position: relative;
-    width: 100%;
-    /* Chiếm toàn bộ chiều rộng khung cha */
-    height: 200px;
-    /* Đặt chiều cao cố định */
-    overflow: hidden;
-    /* Ẩn phần hình ảnh vượt ra ngoài khung */
-}
 
-.entry-media img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: auto;
-    height: 100%;
-    /* Đảm bảo hình ảnh luôn lấp đầy chiều cao khung */
-    max-width: none;
-}
 html,
 body {
     height: 100%
