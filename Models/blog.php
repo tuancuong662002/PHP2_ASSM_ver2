@@ -50,5 +50,17 @@ LIMIT 5
                 ";
             return pdo_query($sql);
         }
+        function related_product($cat, $id) {
+        $sql = "SELECT p.*
+                FROM products p
+                JOIN categories c ON p.product_cat = c.category_id 
+                WHERE product_cat = ? AND product_id != ?";
+        return pdo_query($sql, $cat, $id);
+    }
+    function detail_sp($id)
+    {
+        $sql =  "SELECT * from products where pro_id = ? ";
+        return pdo_query_one($sql, $id);
+    }
 }
 ?>

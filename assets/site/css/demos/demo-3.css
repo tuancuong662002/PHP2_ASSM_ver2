@@ -700,3 +700,17 @@
         margin-top: 0
     }
 }
+ .entry-content {
+        font-size: 18px; /* Cỡ chữ lớn hơn */
+        font-weight: bold; /* Chữ đậm */
+    }
+
+    .social-icons .social-icon {
+        font-size: 20px; /* Cỡ chữ lớn hơn cho biểu tượng chia sẻ */
+        font-weight: bold; /* Chữ đậm cho biểu tượng */
+    }
+
+    .social-label {
+        font-size: 16px; /* Cỡ chữ cho nhãn chia sẻ */
+        font-weight: bold; /* Chữ đậm cho nhãn chia sẻ */
+    }

@@ -50,10 +50,9 @@
                             </div><!-- End .entry-cats -->
 
                             <div class="entry-content">
-                                <p>Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget
-                                    blandit nunc tortor eu nibh. Suspendisse potenti. Sed egestas, ante et vulputate
-                                    volutpat, uctus metus libero eu augue.</p>
-                                <a href="single.html" class="read-more">Continue Reading</a>
+                                <?= htmlspecialchars(substr(strip_tags($blog['blog_content']), 0, 300)) ?>...
+                                <a href="?act=blog_detail&id_blog=<?=$blog['blog_id']?>" class="read-more">Continue
+                                    Reading</a>
                             </div><!-- End .entry-content -->
                         </div><!-- End .entry-body -->
                     </article><!-- End .entry -->
@@ -126,7 +125,6 @@
                                             </li>' ; } ?>
                             </ul><!-- End .posts-list -->
                         </div><!-- End .widget -->
-
 
 
 

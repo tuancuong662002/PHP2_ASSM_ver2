@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="assets/site/css/skins/skin-demo-3.css">
     <link rel="stylesheet" href="assets/site/css/demos/demo-3.css">
     <link rel="stylesheet" href="assets/site/css/style_categories.css">
-
+    <script id="chatway" async="true" src="https://cdn.chatway.app/widget.js?id=M4yfVSQANSNz"></script>
 </head>
 
 

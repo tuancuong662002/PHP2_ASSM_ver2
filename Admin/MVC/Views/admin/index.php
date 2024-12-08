@@ -23,13 +23,6 @@
 
     <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/44.0.0/ckeditor5.css">
     <title>TedeShop Admin</title>
-    <style>
-    .main-container {
-        width: 795px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    </style>
 </head>
 
 <body>
