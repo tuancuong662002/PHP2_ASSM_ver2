@@ -5,8 +5,6 @@ ob_start();
  define("BASE_URL","http://localhost/DuAn1/");
 
 $mod = isset($_GET['act']) ? $_GET['act'] : "home";
-
-
 switch ($mod) {
     case 'home':
         require_once 'Controllers/HomeController.php';
@@ -118,8 +116,6 @@ switch ($mod) {
             $controller_obj = new AdminLongController();
             $controller_obj->index();
         }
-        
-        
         break;
     case 'checkout':
         $act = isset($_GET['xuli']) ? $_GET['xuli'] : "list";

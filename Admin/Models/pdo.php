@@ -1,7 +1,7 @@
-<?php 
-   function pdo_get_connection()
-   {
-       $dburl = "mysql:host=localhost;port=3306;dbname=Tede_Shop;charset=utf8";
+<?php
+function pdo_get_connection()
+{
+   $dburl = "mysql:host=localhost;port=3306;dbname=Tede_Shop;charset=utf8";
        $username = 'root';
        $password = 'tede_shop'; 
        try {
@@ -12,7 +12,7 @@
            echo 'Connection failed: ' . $e->getMessage();
            return null; 
        }
-   }  
+}
    function pdo_query($sql, ...$args)
    {
        try {
@@ -24,7 +24,11 @@
            error_log($e->getMessage()); // Ghi lại lỗi
            return []; // Trả về mảng rỗng trong trường hợp lỗi
        } finally {
-           unset($conn);
+           
+    if ($conn !== null) {
+        $conn = null; // Explicitly close the connection.
+    }
+    
        }
    }
    
@@ -37,9 +41,16 @@
            return $stmt->fetch(PDO::FETCH_ASSOC) ?: null; // Trả về null nếu không có kết quả
        } catch (PDOException $e) {
            error_log($e->getMessage()); // Ghi lại lỗi
-           return null; // Trả về null trong trường hợp lỗi
+           
+        error_log('Database connection failed: ' . $e->getMessage());
+        return null;
+         // Trả về null trong trường hợp lỗi
        } finally {
-           unset($conn);
+           
+    if ($conn !== null) {
+        $conn = null; // Explicitly close the connection.
+    }
+    
        }
    }
    
@@ -54,6 +65,10 @@
            error_log($e->getMessage()); // Ghi lại lỗi
            return 0; // Trả về 0 trong trường hợp lỗi
        } finally {
-           unset($conn);
+           
+    if ($conn !== null) {
+        $conn = null; // Explicitly close the connection.
+    }
+    
        }
    }

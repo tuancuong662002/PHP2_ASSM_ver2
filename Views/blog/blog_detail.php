@@ -224,10 +224,6 @@
             }
             ?>
                             </div><!-- End .owl-carousel -->
-
-
-
-
                         </div><!-- End .related-posts -->
 
                         <div class="comments">

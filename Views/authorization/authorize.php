@@ -1,6 +1,6 @@
 <div class="container mt-3">
     <div class="form-container">
-        <h1 class="mb-4 text-center">Phân Quyền Cho Thành Viên</h1>
+        <h1 class="mb-4 text-center">Phân Quyền </h1>
         <form action="?mod=authorization&act=save" method="POST">
             <!-- Tạo hàng chứa hai cột -->
             <input type="hidden" name="user_email" value="<?=$_GET['id']?>">
