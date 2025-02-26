@@ -1,5 +1,5 @@
 <?php
-require_once "Models/home.php";
+require_once "Client/Models/home.php";
 class HomeController
 {
      var $home_model;
@@ -37,6 +37,6 @@ class HomeController
         
         $trendingSell[] =$this->home_model->takeHotSell(6,0,7);
         $trendingSell[] =$this->home_model->takeHotSell(6,0,11);
-        require_once('Views/index.php');
+        require_once('Client/Views/index.php');
     }
 }

@@ -1,5 +1,5 @@
 <?php
-require_once("Models/login.php");
+require_once("Client/Models/login.php");
 class LoginController
 {
     var $login_model;
@@ -9,7 +9,7 @@ class LoginController
     }
     function login()
     {
-        require_once('Views/index.php');
+        require_once('Client/Views/index.php');
     }
     function login_action()
     {
@@ -61,7 +61,7 @@ class LoginController
        
         $data = $this->login_model->account();
 
-        require_once('Views/index.php');
+        require_once('Client/Views/index.php');
     }
     function update()
     {

@@ -17,26 +17,26 @@
             $blog_title = $_POST['title']; // Lấy tiêu đề từ form
             $blog_image = $_FILES['image']['name']; // Lấy tên file ảnh
             $target_file = $this->target_dir . basename($blog_image); // Đường dẫn lưu ảnh
-            // Kiểm tra kiểu tệp hợp lệ
+           
             $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
             $valid_extensions = ['jpg', 'jpeg', 'png', 'gif'];
 
-            // Kiểm tra tệp tải lên
+            
             if (in_array($imageFileType, $valid_extensions)) {
-                // Di chuyển tệp từ thư mục tạm thời đến thư mục đích
+               
                 if (move_uploaded_file($_FILES['image']['tmp_name'], $target_file)) {
                     echo "The file " . htmlspecialchars($blog_image) . " has been uploaded.";
                 } else {
                     echo "Sorry, there was an error uploading your file.";
-                    return; // Dừng lại nếu có lỗi
+                    return; 
                 }
             } else {
                 echo "Invalid file type. Only JPG, JPEG, PNG, and GIF files are allowed.";
-                return; // Dừng lại nếu loại tệp không hợp lệ
+                return; 
             }
             $blog_pro_id = $_POST['blog_pro_id']; 
             $blog_content = $_POST['content'];
-            $user_email = $_SESSION['login']['user_email']; // Lấy email từ session
+            $user_email = $_SESSION['login']['user_email']; 
             if($blog_title &&  $blog_image &&  $blog_content && $user_email ){
                 $this->Blog->addBlog($blog_title, $blog_image, $blog_pro_id , $blog_content, $user_email);
                  header("Location: ?mod=blog&act=add"); 

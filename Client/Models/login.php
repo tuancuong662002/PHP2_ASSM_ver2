@@ -15,13 +15,13 @@ class Login extends Model
                 $_SESSION['isLogin_Admin'] = true;
                 $_SESSION['login'] = $login;
 
-            header('Location: /DuAn1/Admin');
+            header('Location: /DuAn1-nkDuy/Admin/?mod=login');
             } else if($login['user_role'] >= 2){
                 $_SESSION['isLogin_Nhanvien'] = true;
                 $_SESSION['login'] = $login;
 
                
-            header('Location: /DuAn1/Admin');
+            header('Location: /DuAn1-nkDuy/Admin/?mod=login');
             } else {
                 $_SESSION['isLogin'] = true;
                 $_SESSION['login'] = $login;

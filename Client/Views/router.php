@@ -1,5 +1,5 @@
 <?php
-$act = isset($_GET['act']) ? $_GET['act'] : "home";
+$act = isset($_GET['act']) ? $_GET['act'] : "blog";
 switch ($act) {
     case "taikhoan":
         $act = isset($_GET['xuli']) ? $_GET['xuli'] : "login";
@@ -41,7 +41,7 @@ switch ($act) {
             break;
         }
     case "home":
-        require_once "home/home.php";
+        require_once "blog/blog.php";
         break;
     case "shop":
         require_once("shop/shop.php");

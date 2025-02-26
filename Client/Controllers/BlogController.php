@@ -1,6 +1,6 @@
 <?php
-require_once("Models/blog.php");
-require_once("Models/product.php");
+require_once("Client/Models/blog.php");
+require_once("Client/Models/product.php");
 class BlogController
 {
     private $blog_model , $product_model ;
@@ -25,7 +25,7 @@ class BlogController
          }
          //product popular
          $product_populars = $this->blog_model->product_top() ;
-         require_once('Views/index.php');
+         require_once('Client/Views/index.php');
     }
     function Blog_Detail(){
         $id = $_GET['id_blog']; 
@@ -41,7 +41,7 @@ class BlogController
         $product = $this->product_model->findByID($pro_id); 
         $cat_id = $product['product_cat'];
         $related_products = $this->blog_model->related_product($cat_id  , $pro_id) ;
-        require_once('Views/index.php');
+        require_once('Client/Views/index.php');
     }
 }
 ?>

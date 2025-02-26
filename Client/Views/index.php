@@ -41,10 +41,10 @@
 
 <body>
     <div class="page-wrapper">
-        <?php require_once('Views/header_footer/header.php'); ?>
+        <?php require_once('Client/Views/header_footer/header.php'); ?>
 
         <main class="main">
-            <?php require_once 'Views/router.php' ?>
+            <?php require_once 'Client/Views/router.php' ?>
         </main><!-- End .main -->
 
         <?php require_once 'header_footer/footer.php' ?>

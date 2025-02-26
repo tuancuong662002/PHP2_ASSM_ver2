@@ -230,7 +230,7 @@
                         <nav class="side-nav">
                             <ul class="category-menu">
                                 <?php
-                                require_once 'Controllers/CategoryController.php';
+                                require_once 'Client/Controllers/CategoryController.php';
                                 $category = new CategoryController();
                                 echo $category->list_cat_home();
                             ?>

@@ -4,16 +4,16 @@ ob_start();
 
  define("BASE_URL","http://localhost/DuAn1/");
 
-$mod = isset($_GET['act']) ? $_GET['act'] : "home";
+$mod = isset($_GET['act']) ? $_GET['act'] : "blog";
 switch ($mod) {
     case 'home':
-        require_once 'Controllers/HomeController.php';
-        $controller_obj = new HomeController();
-        $controller_obj->list();
+        require_once('Client/Controllers/BlogController.php');
+        $controller_obj = new BlogController() ;
+        $controller_obj->Blog_View();
         break;
     case 'taikhoan':
         $act = isset($_GET['xuli']) ? $_GET['xuli'] : "taikhoan";
-        require_once('Controllers/LoginController.php');
+        require_once('Client/Controllers/LoginController.php');
         $controller_obj = new LoginController();
         if ((isset($_SESSION['isLogin']) && $_SESSION['isLogin'] == true)) {
             switch ($act) {
@@ -67,18 +67,18 @@ switch ($mod) {
             }
         }
     case 'shop':
-        require_once('Controllers/ShopController.php');
+        require_once('Client/Controllers/ShopController.php');
         $controller_obj = new ShopController();
         $controller_obj->list();
         break;
     case 'product':
-        require_once('Controllers/ProductController.php');
+        require_once('Client/Controllers/ProductController.php');
         $controller_obj = new ProductController();
         $controller_obj->list();
         break;
     case 'cart':
         $act = isset($_GET['xuli']) ? $_GET['xuli'] : "list";
-        require_once('Controllers/CartController.php');
+        require_once('Client/Controllers/CartController.php');
         $controller_obj = new CartController();
         switch ($act) {
             case 'list':
@@ -106,20 +106,20 @@ switch ($mod) {
         break;
     case 'adminLong':
         if ( isset($_GET['act']) && isset($_GET['ctlr']) && isset($_GET['method']) ){
-            require_once __DIR__.'/Controllers/'.$_GET['ctlr'].'.php';
+            require_once __DIR__.'/Client/Controllers/'.$_GET['ctlr'].'.php';
             $controller_obj = new $_GET['ctlr']();
             $action = $_GET['method'];
             $controller_obj->$action();
         }
         else{
-            require_once __DIR__.'/Controllers/AdminLongController.php';
+            require_once __DIR__.'/Client/Controllers/AdminLongController.php';
             $controller_obj = new AdminLongController();
             $controller_obj->index();
         }
         break;
     case 'checkout':
         $act = isset($_GET['xuli']) ? $_GET['xuli'] : "list";
-        require_once('Controllers/CheckoutController.php');
+        require_once('Client/Controllers/CheckoutController.php');
         $controller_obj = new CheckoutController();
         switch ($act) {
             case 'list':
@@ -137,23 +137,23 @@ switch ($mod) {
         }
         break;
      case 'blog': 
-        require_once('Controllers/BlogController.php');
+        require_once('Client/Controllers/BlogController.php');
         $controller_obj = new BlogController() ;
         $controller_obj->Blog_View();
         break; 
     case 'blog_detail':
-        require_once('Controllers/BlogController.php');
+        require_once('Client/Controllers/BlogController.php');
         $controller_obj = new BlogController() ;
         $controller_obj->Blog_Detail();
         break;
     case 'comment':
-        require_once('Controllers/CommentController.php');
+        require_once('Client/Controllers/CommentController.php');
         $controller_obj = new commentControlller() ;
         $controller_obj->comment_exc(); 
         break; 
     default:
-        require_once 'Controllers/HomeController.php';
-        $controller_obj = new HomeController();
-        $controller_obj->list();
+        require_once('Client/Controllers/BlogController.php');
+        $controller_obj = new BlogController() ;
+        $controller_obj->Blog_View();
         break;
 }
