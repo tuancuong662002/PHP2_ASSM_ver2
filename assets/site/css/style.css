@@ -425,7 +425,7 @@ blockquote.text-center p {
 blockquote cite {
     font-style: normal;
     font-weight: 500;
-    color: #333333;
+    color: #f7452e;
     letter-spacing: -.01em;
     line-height: 1
 }
@@ -2534,7 +2534,7 @@ blockquote.text-white cite span {
     display: flex;
     align-items: center;
     align-self: stretch;
-    color: #333333;
+    color: #f7452e;
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 1.5;
@@ -3507,11 +3507,11 @@ p {
 
 .header-3 {
     color: #fff;
-    background-color: #333333
+    background-color: #f7452e;
 }
 
 .header-3 .header-top {
-    background-color: #333
+    background-color: #f7452e ; 
 }
 
 .header-3 .header-top .container::after,
@@ -5897,7 +5897,7 @@ p {
 }
 
 .footer .widget-title {
-    color: #333333;
+    color: #f7452e;
     font-weight: 500;
     font-size: 1.6rem;
     letter-spacing: -.01em;
@@ -6076,7 +6076,7 @@ p {
 }
 
 .footer-dark {
-    background-color: #333333
+    background-color: #f7452e
 }
 
 .footer-dark .footer-middle {
@@ -6144,7 +6144,7 @@ p {
     display: block;
     font-weight: 300;
     font-size: 1.3rem;
-    color: #333333;
+    color: #f7452e;
     letter-spacing: 0;
     margin-bottom: .4rem
 }
@@ -6386,7 +6386,7 @@ p {
 }
 
 .breadcrumb-item.active {
-    color: #333333
+    color: #f7452e
 }
 
 .breadcrumb-item+.breadcrumb-item {
@@ -6523,7 +6523,7 @@ p {
 }
 
 .icon-box-title {
-    color: #333333;
+    color: #f7452e;
     font-weight: 400;
     font-size: 1.8rem;
     letter-spacing: -.025em;
@@ -7889,7 +7889,7 @@ p {
 .product-countdown .countdown-period {
     display: block;
     font-weight: 400;
-    color: #333333;
+    color: #f7452e;
     text-transform: lowercase;
     width: 100%;
     padding-left: .2rem;
@@ -7978,7 +7978,7 @@ p {
     font-size: 1.6rem;
     line-height: 1.25;
     letter-spacing: -.01em;
-    color: #333333;
+    color: #f7452e;
     margin-bottom: .2rem
 }
 
@@ -8055,7 +8055,7 @@ p {
     padding: .5rem .9rem;
     min-width: 45px;
     text-align: center;
-    color: #333333;
+    color: #f7452e;
     background-color: #fff
 }
 
@@ -8263,7 +8263,7 @@ p {
 }
 
 .product-action-dark {
-    background-color: #333333
+    background-color: #f7452e
 }
 
 .product-action-dark .btn-product:not(:hover):not(:focus) span {
@@ -8732,7 +8732,7 @@ p {
     padding-top: 1.1rem;
     padding-bottom: 1.1rem;
     color: #c96;
-    background-color: #333333
+    background-color: #f7452e
 }
 
 .product.product-5 .btn-product span {
@@ -9168,7 +9168,7 @@ p {
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 0;
-    color: #333333
+    color: #f7452e
 }
 
 .product.product-10 .new-price {
@@ -9558,7 +9558,7 @@ p {
 }
 
 .banner-title {
-    color: #333333;
+    color: #f7452e;
     font-weight: 500;
     font-size: 2rem;
     line-height: 1.3;
@@ -13329,7 +13329,7 @@ button:focus {
 }
 
 .product-details-tab .nav.nav-pills .nav-link {
-    color: #333333;
+    color: #f7452e;
     font-size: 1.6rem;
     padding: .55rem 3rem;
     border-bottom-width: .2rem;
@@ -13371,7 +13371,7 @@ button:focus {
 }
 
 .product-desc-content ul {
-    color: #333333
+    color: #f7452e
 }
 
 .product-desc-content ul li {
@@ -14049,7 +14049,7 @@ button:focus {
 }
 
 .entry-title {
-    color: #333333;
+    color: #f7452e;
     font-weight: 600;
     font-size: 2.2rem;
     line-height: 1.25;
@@ -14151,7 +14151,7 @@ button:focus {
 
 .menu-cat a {
     display: inline-block;
-    color: #333333;
+    color: #f7452e;
     font-weight: 300;
     font-size: 1.4rem;
     line-height: 1.5;
@@ -14646,7 +14646,7 @@ button:focus {
 
 .editor-content blockquote {
     position: relative;
-    color: #333333;
+    color: #f7452e;
     font-style: normal;
     font-weight: 400;
     font-size: 1.8rem;
@@ -16686,7 +16686,7 @@ button:focus {
 
 .btn.btn-spinner {
     min-width: 0;
-    color: #333333;
+    color: #f7452e;
     padding: 1.25rem .4rem;
     font-size: 1rem;
     border: none;

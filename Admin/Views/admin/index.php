@@ -50,7 +50,7 @@
 
         </div>
         <div class="container-fluid">
-            <?php require_once 'router.php'?>
+            <?php require_once 'Views/router.php'?>
         </div>
     </main>
 
@@ -82,7 +82,7 @@
     // https://portal.ckeditor.com/checkout?plan=free
     ClassicEditor
         .create(document.querySelector('#editor'), {
-            licenseKey: 'eyJhbGciOiJFUzI1NiJ9.eyJleHAiOjE3MzQ3MzkxOTksImp0aSI6IjY1N2Y1MDRlLTc3MmItNDkzMi1hMDA2LTMyOWI3YWZmZTkxMyIsInVzYWdlRW5kcG9pbnQiOiJodHRwczovL3Byb3h5LWV2ZW50LmNrZWRpdG9yLmNvbSIsImRpc3RyaWJ1dGlvbkNoYW5uZWwiOlsiY2xvdWQiLCJkcnVwYWwiLCJzaCJdLCJ3aGl0ZUxhYmVsIjp0cnVlLCJsaWNlbnNlVHlwZSI6InRyaWFsIiwiZmVhdHVyZXMiOlsiKiJdLCJ2YyI6IjU3MjM4ZmE3In0.d76okmZCfuSScy7YBTtfCLObYhhJPcV32Hq96MWWBqoneZsEb7i5-xvFGGf5JIgAlUQzx8RPJ4nErg9j5gmzZg',
+            licenseKey: 'eyJhbGciOiJFUzI1NiJ9.eyJleHAiOjE3NjUwNjU1OTksImp0aSI6IjQxYWY4ZDY2LTExNGYtNGE5MS04OGM5LTk3MzIzZDA0NDYwNCIsImxpY2Vuc2VkSG9zdHMiOlsiMTI3LjAuMC4xIiwibG9jYWxob3N0IiwiMTkyLjE2OC4qLioiLCIxMC4qLiouKiIsIjE3Mi4qLiouKiIsIioudGVzdCIsIioubG9jYWxob3N0IiwiKi5sb2NhbCJdLCJ1c2FnZUVuZHBvaW50IjoiaHR0cHM6Ly9wcm94eS1ldmVudC5ja2VkaXRvci5jb20iLCJkaXN0cmlidXRpb25DaGFubmVsIjpbImNsb3VkIiwiZHJ1cGFsIl0sImxpY2Vuc2VUeXBlIjoiZGV2ZWxvcG1lbnQiLCJmZWF0dXJlcyI6WyJEUlVQIl0sInZjIjoiM2M2YjhjMTYifQ.9n4AdixzBMYIM7NZzeryo7w1My0ndakzTU4KnJS6JKjDuID2qIuLR0k_J83KY5RDvt5uP9lUJEEb6pHfoiZxcA',
             plugins: [Essentials, Paragraph, Bold, Italic, Font],
             toolbar: [
                 'undo', 'redo', '|', 'bold', 'italic', '|',

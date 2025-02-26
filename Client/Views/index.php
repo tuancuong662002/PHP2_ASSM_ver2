@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="assets/site/css/plugins/magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="assets/site/css/plugins/jquery.countdown.css">
     <!-- Main CSS File -->
-    <link rel="stylesheet" href="assets/site/css/style.css">
+    <link rel="stylesheet" href="assets/site/css/style.css?v=<?php echo time();?>">
     <link rel="stylesheet" href="assets/site/css/skins/skin-demo-3.css">
     <link rel="stylesheet" href="assets/site/css/demos/demo-3.css">
     <link rel="stylesheet" href="assets/site/css/style_categories.css">
@@ -44,7 +44,7 @@
         <?php require_once('Client/Views/header_footer/header.php'); ?>
 
         <main class="main">
-            <?php require_once 'Client/Views/router.php' ?>
+            <?php require_once 'Client/router.php' ?>
         </main><!-- End .main -->
 
         <?php require_once 'header_footer/footer.php' ?>
